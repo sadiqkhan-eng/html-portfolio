@@ -1,3 +1,49 @@
+/* ================================
+   Global Root Variables
+================================ */
+:root {
+  /* Colors */
+  --primary-color: #4b7bec;
+  --primary-dark: #3867d6;
+  --secondary-color: #a5b1c2;
+  --light-color: #f5f6fa;
+  --dark-color: #1e272e;
+  --text-color: #2f3640;
+  --white: #ffffff;
+
+  /* Background Colors */
+  --bg-main: #ffffff;
+  --bg-secondary: #f1f2f6;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #4b7bec, #3867d6);
+  --gradient-dark: linear-gradient(135deg, #1e272e, #2f3640);
+
+  /* Typography */
+  --font-family: "Poppins", sans-serif;
+
+  --h1-size: 3rem;
+  --h2-size: 2.2rem;
+  --h3-size: 1.6rem;
+  --text-size: 1rem;
+  --small-text: 0.9rem;
+
+  /* Spacing */
+  --section-padding: 80px;
+  --container-width: 1200px;
+
+  /* UI */
+  --radius: 12px;
+  --circle-radius: 50%;
+  --shadow:
+    0 4px 12px rgba(0, 0, 0, 0.10),
+    0 2px 6px rgba(0, 0, 0, 0.08);
+
+  /* Transition */
+  --transition: 0.3s ease-in-out;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -99,4 +145,46 @@ li {
     border-radius: 50%;
     overflow: hidden;
     margin-top: 2rem
+}
+
+
+/* ================================
+   ABOUT SECTION
+================================ */
+.about {
+  background: var(--bg-secondary);
+}
+
+.about h2 {
+  text-align: center;
+  font-size: var(--h2-size);
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.about-cont {
+  max-width: var(--container-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-cont .about-img img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.about-cont h3 {
+  font-size: var(--h3-size);
+  margin-bottom: 15px;
+}
+
+.about-cont p {
+  line-height: 1.7;
+  font-size: var(--text-size);
+  color: var(--text-color);
 }
