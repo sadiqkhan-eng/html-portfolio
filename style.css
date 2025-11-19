@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 1px 25px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-logo a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.navbar .nav-ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.intro-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.intro-content .intro-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.intro-content .intro-left h1 {
+    font-size: 3rem;
+}
+
+.intro-content .intro-left h5 {
+    font-size: 1.9rem;
+    color: #000;
+    font-weight: 400;
+}
+
+.intro-content .intro-left p{
+    font-size: 1.3rem;
+    width: 500px;
+    color: #000;
+    font-weight: 400;
+}
+
+
+.intro-content .intro-left > .btns {
+    display: flex;
+}
+
+.intro-content .intro-left .btns button {
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    /* gap: 30px; */
+}
+
+.intro-content .intro-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.intro-content .intro-right .pro-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 2rem
+}
